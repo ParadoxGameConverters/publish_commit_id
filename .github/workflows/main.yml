@@ -17,6 +17,6 @@ jobs:
         destination_file: 'publish_commit_id.txt'
         user_email: 'idhrendur@hotmail.com'
         user_name: 'idhrendur'
-        destination_branch: 'test'
-        destination_branch_create: 'test'
+        destination_branch: 'master'
+        destination_branch_create: 'master'
         commit_message: 'Publish publish_commit_id's commit id'
