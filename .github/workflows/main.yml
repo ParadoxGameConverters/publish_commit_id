@@ -21,4 +21,4 @@ jobs:
         user_name: 'idhrendur'
         destination_branch: 'master'
         destination_branch_create: 'master'
-        commit_message: 'Publish publish_commit_id's commit id'
+        commit_message: "Publish publish_commit_id's commit id"
