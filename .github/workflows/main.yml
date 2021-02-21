@@ -1,0 +1,22 @@
+name: "Publish commit id"
+
+on: push
+
+jobs:
+  publish_id:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Publish commit id
+      uses: ParadoxGameConverters/publish_commit_id@master
+      env:
+        API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+      with:
+        destination_file: 'publish_commit_id.txt'
+        user_email: 'idhrendur@hotmail.com'
+        user_name: 'idhrendur'
+        destination_branch: 'test'
+        destination_branch_create: 'test'
+        commit_message: 'Publish publish_commit_id's commit id'
