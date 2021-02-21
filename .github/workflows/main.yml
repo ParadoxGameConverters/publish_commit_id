@@ -12,13 +12,13 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Publish commit id
-      uses: ParadoxGameConverters/publish_commit_id@master
+      uses: ParadoxGameConverters/publish_commit_id@main
       env:
         API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
       with:
         destination_file: 'publish_commit_id.txt'
         user_email: 'idhrendur@hotmail.com'
         user_name: 'idhrendur'
-        destination_branch: 'master'
-        destination_branch_create: 'master'
+        destination_branch: 'main'
+        destination_branch_create: 'main'
         commit_message: "Publish publish_commit_id's commit id"
