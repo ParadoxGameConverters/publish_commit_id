@@ -11,6 +11,9 @@ OUTPUT_BRANCH="$INPUT_DESTINATION_BRANCH"
 
 CLONE_DIR=$(mktemp -d)
 
+git config --global --add safe.directory "$GITHUB_WORKSPACE"
+git config --global --add safe.directory "$CLONE_DIR"
+
 echo "Cloning destination git repository"
 git config --global user.email "$INPUT_USER_EMAIL"
 git config --global user.name "$INPUT_USER_NAME"
